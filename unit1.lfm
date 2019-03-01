@@ -1,0 +1,96 @@
+object Form1: TForm1
+  Left = 419
+  Height = 700
+  Top = 124
+  Width = 650
+  Caption = 'Form1'
+  ClientHeight = 700
+  ClientWidth = 650
+  LCLVersion = '1.8.4.0'
+  object editBin: TEdit
+    Left = 331
+    Height = 23
+    Top = 200
+    Width = 176
+    MaxLength = 8
+    NumbersOnly = True
+    TabOrder = 0
+  end
+  object editDeci: TEdit
+    Left = 331
+    Height = 23
+    Top = 304
+    Width = 176
+    NumbersOnly = True
+    TabOrder = 1
+  end
+  object editHexa: TEdit
+    Left = 331
+    Height = 23
+    Top = 408
+    Width = 176
+    NumbersOnly = True
+    TabOrder = 2
+  end
+  object LblBin: TLabel
+    Left = 144
+    Height = 15
+    Top = 200
+    Width = 36
+    Caption = 'Binaire'
+    ParentColor = False
+  end
+  object lblDec: TLabel
+    Left = 144
+    Height = 15
+    Top = 304
+    Width = 43
+    Caption = 'Décimal'
+    ParentColor = False
+    OnClick = lblDecClick
+  end
+  object LblHex: TLabel
+    Left = 144
+    Height = 15
+    Top = 408
+    Width = 68
+    Caption = 'Héxadécimal'
+    ParentColor = False
+  end
+  object btnBinToDeci: TButton
+    Left = 403
+    Height = 27
+    Top = 248
+    Width = 34
+    Caption = '↓'
+    OnClick = btnBinToDeciClick
+    TabOrder = 3
+  end
+  object btnDeciToHexa: TButton
+    Left = 403
+    Height = 27
+    Top = 352
+    Width = 34
+    Caption = '↓'
+    OnClick = btnDeciToHexaClick
+    TabOrder = 4
+  end
+  object btnReset: TButton
+    Left = 288
+    Height = 24
+    Top = 504
+    Width = 72
+    Caption = 'Reset'
+    OnClick = btnResetClick
+    TabOrder = 5
+  end
+  object btnQuit: TButton
+    Left = 288
+    Height = 24
+    Top = 544
+    Width = 72
+    Caption = 'Quitter'
+    OnClick = btnQuitClick
+    TabOrder = 6
+  end
+end
